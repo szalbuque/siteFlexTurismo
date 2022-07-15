@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGN CONTENT</title>
+    <style>
+        .container{
+            height: 320px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orange;
+            padding:0 5px;
+            flex:1;
+            text-align: center;
+            color: white;
+            margin:5px;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Para esta propriedade funcionar, precisamos
+        que o container utilize quebra de linhas e que a altura
+        do container seja maior que a soma do tamanho das linhas dos itens
+    </p>
+    <br>
+    <h1>ALIGN-CONTENT</h1>
+    <h2>Comportamento padrão: STRETCH</h2>
+    <div class="container">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+        <div class="item">faucibus ipsum</div>
+        <div class="item"> Ut a faucibus ipsum. ed nulla sollicitudin ullamcorper congue ac enim.</div>
+        <div class="item"> Integer sagittis neque vel</div>
+        <div class="item">sagittis neque vel nunc feugiat pharetra</div>
+        <div class="item">simply dummy text of the printing</div>
+    </div>
+    <br>
+    <h2>CENTER</h2>
+    <div class="container center">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+        <div class="item">faucibus ipsum</div>
+        <div class="item"> Ut a faucibus ipsum. Igiat pharetra. Nunc sit amet ex sed nulla sollicitudin ullamcorper congue ac enim.</div>
+        <div class="item"> Integer sagittis neque vel</div>
+        <div class="item">sagittis neque vel nunc feugiat pharetra</div>
+        <div class="item">simply dummy text of the printing</div>
+    </div>
+    <br>
+    <h2>FLEX-START</h2>
+    <div class="container flex-start">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+        <div class="item">faucibus ipsum</div>
+        <div class="item"> Ut a faucibus ipsum.  Nunc sit amet ex sed nulla sollicitudin ullamcorper congue ac enim.</div>
+        <div class="item"> Integer sagittis neque vel</div>
+        <div class="item">sagittis neque vel nunc feugiat pharetra</div>
+        <div class="item">simply dummy text of the printing</div>
+    </div>
+    <br>
+    <h2>FLEX-END</h2>
+    <div class="container flex-end">
+        <div class="item">Lorem Ipsum is simply dummy  typesetting industry</div>
+        <div class="item">faucibus ipsum</div>
+        <div class="item"> Ut a faucibus ipsum.  icitudin ullamcorper congue ac enim.</div>
+        <div class="item"> Integer sagittis neque vel</div>
+        <div class="item">sagittis neque vel nunc feugiat pharetra</div>
+        <div class="item">simply dummy text of the printing</div>
+    </div>
+    <br>
+    <h2>SPACE AROUND</h2>
+    <div class="container space-around">
+        <div class="item">Lorem Ipsum is simply dummy  typesetting industry</div>
+        <div class="item">faucibus ipsum</div>
+        <div class="item"> Ut a faucibus ipsum.  icitudin ullamcorper congue ac enim.</div>
+        <div class="item"> Integer sagittis neque vel</div>
+        <div class="item">sagittis neque vel nunc feugiat pharetra</div>
+        <div class="item">simply dummy text of the printing</div>
+    </div>
+    <br>
+    <h2>SPACE BETWEEN</h2>
+    <div class="container space-between">
+        <div class="item">Lorem Ipsum is simply dummy  typesetting industry</div>
+        <div class="item">faucibus ipsum</div>
+        <div class="item"> Ut a faucibus ipsum.  icitudin ullamcorper congue ac enim.</div>
+        <div class="item"> Integer sagittis neque vel</div>
+        <div class="item">sagittis neque vel nunc feugiat pharetra</div>
+        <div class="item">simply dummy text of the printing</div>
+    </div>
+</body>
+</html>
