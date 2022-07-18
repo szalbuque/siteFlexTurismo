@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,4 +18,70 @@
     
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex items - flex-basis</title>
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 1px solid black;
+            display:flex;
+        }
+        .items{
+            background-color: coral;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .fg-1{
+            flex-grow:1;
+        }
+        .fg-2{
+            flex-grow:2;
+        }
+        .b-0{
+            flex-basis:0;
+        }
+    </style>
+</head>
+<body>
+    <p>É a propriedade que estabelece o tamanho
+        inicial do item, antes das distribuições de espaços restantes dentro dele,
+        usando como base o conteúdo interno disposto.
+    </p>
+    <p>Abaixo todos os itens estão com flex-basis: auto e flex-grow: 1.</p>
+    <p>Eles vão passar a ocupar espaço proporcional ao espaço antes e após o conteúdo e o tamanho base de cada elemento é proporcional ao texto.</p>
+    <div class="flex-container">
+        <div class="items bauto fg-1">A</div>
+        <div class="items bauto fg-1">BBB</div>
+        <div class="items bauto fg-1">C</div>
+        <div class="items bauto fg-1">DEF</div>
+    </div>
+    <p>Abaixo, o item DEF está com flex-grow:2.</p>
+    <div class="flex-container">
+        <div class="items bauto fg-1">A</div>
+        <div class="items bauto fg-1">BBB</div>
+        <div class="items bauto fg-1">C</div>
+        <div class="items bauto fg-2">DEF</div>
+    </div>
+    <p>Abaixo, flex-basis:0 e flex-grow:1</p>
+    <p>Ele tenta ao máximo manter a proporcionalidade e 
+        manter os elementos dentro do container
+    </p>
+    <div class="flex-container">
+        <div class="items b-0 fg-1">AAAAA</div>
+        <div class="items b-0 fg-1">BBBBBBB</div>
+        <div class="items b-0 fg-1">CCCCCCCC</div>
+        <div class="items b-0 fg-1">DEFGGGG</div>
+    </div>
+</body>
+>>>>>>> a1654eb (trabalhando com flex-basis e flex-grow)
 </html>
